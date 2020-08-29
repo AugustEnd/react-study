@@ -7,3 +7,5 @@
 
 * 在a-react-demo yarn start 前先yarn link react react-dom
 * 需要修改的文件是cjs/react-development.js cjs/react-dom/development.js
+
+test/ssh
