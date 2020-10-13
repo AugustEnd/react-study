@@ -38,6 +38,7 @@ const AddModal: FC = ({}) => {
 };
 
 function App() {
+    console.log('dd')
     const changeFile = (e: any) => {
         const file = e.target.files[0];
         console.log(e, e.target.value, file);
