@@ -1,6 +1,6 @@
 export { getDefaultReactQueryConfig } from './config'
 export {
-  queryCache,
+  queryCache, 
   queryCaches,
   makeQueryCache,
   QueryCache,
