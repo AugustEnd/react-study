@@ -1,22 +1,31 @@
 import React, { useEffect, useState } from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
+import { setName, getName } from "./Utils/global";
 // import App from './App';
+import Children from "./component/items";
+
 function App() {
     const [text, setText] = useState("L1");
+    // const [text2, setText2] = useState("L2");
     useEffect(() => {
+        console.log(getName());
+        setName("yegaofeng");
         setTimeout(() => {
             setText("LI11111");
+            setText("LI22222");
+            console.log(getName());
+            // setText2("LI22222");
         }, 5000);
     }, []);
     return (
         <div className="parent">
-            <div className="children-class1">
-                DIV1
-                <li>{text}</li>
-                <li>LI1-1</li>
-                <li>LI1-2</li>
+            <div>
+                {text}
+                {/* {text2} */}
             </div>
+            <Children />
+
             {/* <div className="children-class2">
                 DIV2
                 <li>LI2</li>
