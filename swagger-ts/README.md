@@ -15,7 +15,7 @@
 **webpack.config.js**
 
 ```js
-const HtmlWebpackPlugin = require("@tms/swagger2ts-plugin");
+const Swapper2TsPlugin = require("@tms/swagger2ts-plugin");
 
 module.exports = {
     entry: "index.js",
