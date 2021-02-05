@@ -6,55 +6,6 @@
         <title>Document</title>
     </head>
     <body>
-        <script>
-            function TreeNode(val, left, right) {
-                this.val = val === undefined ? 0 : val;
-                this.left = left === undefined ? null : left;
-                this.right = right === undefined ? null : right;
-            }
-            var root = {
-                val: 4,
-                left: {
-                    val: 9,
-                    left: {
-                        val: 5,
-                        left: null,
-                        right: null,
-                    },
-                    right: {
-                        val: 1,
-                        left: null,
-                        right: null,
-                    },
-                },
-                right: {
-                    val: 0,
-                    left: null,
-                    right: null,
-                },
-            };
-            var sumNumbers = function (root) {
-                if (!root) return 0;
-                function loop(obj) {
-                    let valLeft = [];
-                    let valRight = [];
-                    if (obj.left) {
-                        valLeft = loop(obj.left);
-                    }
-                    if (obj.right) {
-                        valRight = loop(obj.right);
-                    }
-
-                    if (!obj.left && !obj.right) {
-                        return [obj.val + ""];
-                    }
-                    return valLeft
-                        .map((el) => obj.val + el)
-                        .concat(valRight.map((el) => obj.val + el));
-                }
-                return loop(root).reduce((a, b) => a + Number(b), 0)
-            };
-            sumNumbers(root);
-        </script>
+        <script src="./leetcode-ts/index.js"></script>
     </body>
 </html>
