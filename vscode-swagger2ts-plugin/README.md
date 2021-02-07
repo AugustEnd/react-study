@@ -1,4 +1,7 @@
-# vscode-swagger2ts-plugin README
+# Hello World Sample
 
-### 参考
-[参考1](https://www.cnblogs.com/liuxianan/p/vscode-plugin-develop-tips.html)
+This is a Hello World example that shows you how to use VS Code API.
+
+Guide for this sample: https://code.visualstudio.com/api/get-started/your-first-extension.
+
+## Demo
