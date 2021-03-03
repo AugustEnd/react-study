@@ -12,6 +12,7 @@ const testCreateFile = () => {
     console.log(vscode.workspace
         .getConfiguration("swagger-ts-plugin")
         .get("serviceList"), "serviceList");
+    vscode.window.showWarningMessage(`test ${JSON.stringify(vscode.workspace.getConfiguration("swagger-ts-plugin"))}`);
     if (rootPath) {
         fs.writeFile(path.resolve(rootPath, `ye.txt`), "sss", (error) => {
             if (!error) {
